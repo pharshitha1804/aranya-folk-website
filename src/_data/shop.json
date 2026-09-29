@@ -1,0 +1,16 @@
+{
+  "title": "Products",
+  "eyebrow": "Shop",
+  "intro": "Plants, planters and care essentials, chosen by our horticulturists.",
+  "category_heading": "Category",
+  "all_label": "All",
+  "light_heading": "Light",
+  "placement_heading": "Placement",
+  "sort_label": "Sort",
+  "button_label": "Enquire",
+  "empty_text": "No products match these filters.",
+  "count_label": "products",
+  "sort_featured": "Featured",
+  "sort_price_asc": "Price: low to high",
+  "sort_price_desc": "Price: high to low"
+}

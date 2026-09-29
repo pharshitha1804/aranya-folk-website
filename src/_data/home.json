@@ -1,0 +1,59 @@
+{
+  "title": "Home",
+  "hero": {
+    "layout": "Split",
+    "title": "Gardens made for the way you live.",
+    "text": "Indoor and outdoor gardens for homes, and large-scale landscapes for corporate campuses. Designed, planted and cared for by one team.",
+    "primary_button": "Explore services",
+    "secondary_button": "Shop plants",
+    "image": "/assets/images/caladium.jpg",
+    "image_alt": "Placeholder garden photo",
+    "small_image": "/assets/images/aglaonema.jpg",
+    "small_image_alt": "Placeholder plant photo",
+    "badge_title": "In & out",
+    "badge_text": "Balconies, courtyards, living rooms, rooftops."
+  },
+  "offerings": {
+    "title": "Two kinds of green space. One team.",
+    "link_label": "All services →",
+    "items": [
+      {
+        "label": "For homes",
+        "title": "Residential gardens",
+        "text": "Indoor planting, balconies, terraces, courtyards and backyards.",
+        "image": "/assets/images/jade-orange.jpg",
+        "image_alt": "Placeholder residential garden photo"
+      },
+      {
+        "label": "For businesses",
+        "title": "Corporate landscapes",
+        "text": "Campuses, offices, lobbies and green roofs, with ongoing maintenance.",
+        "image": "/assets/images/jade.jpg",
+        "image_alt": "Placeholder corporate landscape photo"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "From first visit to first bloom"
+  },
+  "projects": {
+    "title": "Selected projects",
+    "link_label": "View portfolio →",
+    "link_url": "",
+    "items": [
+      { "name": "Project name", "type": "Residential", "image": "/assets/images/caladium.jpg" },
+      { "name": "Project name", "type": "Corporate", "image": "/assets/images/jade.jpg" },
+      { "name": "Project name", "type": "Indoor", "image": "/assets/images/aglaonema.jpg" }
+    ]
+  },
+  "shop": {
+    "eyebrow": "The shop",
+    "title": "Plants & planters",
+    "link_label": "Shop all →"
+  },
+  "testimonial": {
+    "quote": "Client testimonial goes here, one or two sentences about the result and the experience.",
+    "author": "Client name, Company / City"
+  }
+}

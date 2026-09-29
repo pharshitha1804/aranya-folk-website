@@ -1,0 +1,85 @@
+{%- set navItems = [
+  { key: "home", url: "/" },
+  { key: "products", url: "/products/" },
+  { key: "services", url: "/services/" },
+  { key: "about", url: "/about/" },
+  { key: "contact", url: "/contact/" }
+] -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.url == "/" %}{{ site.name }}{% else %}{{ title }} | {{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="icon" href="{{ site.logo }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<div class="page">
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="/">
+      <img src="{{ site.logo }}" alt="{{ site.name }}">
+      <span class="brand__tagline">{{ site.tagline }}</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      {%- for item in navItems %}
+      <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ site.nav[item.key] }}</a>
+      {%- endfor %}
+    </nav>
+    <a class="btn btn--solid" href="/contact/#book">{{ site.header_button }}</a>
+  </div>
+</header>
+
+<main>
+{{ content | safe }}
+</main>
+
+<section class="band--clay">
+  <div class="wrap cta">
+    <h2>{{ site.cta.title }}</h2>
+    <a class="btn btn--light" href="/contact/#book">{{ site.cta.button }}</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <a class="brand" href="/">
+          <img src="{{ site.logo_light }}" alt="{{ site.name }}">
+          <span class="brand__tagline">{{ site.tagline }}</span>
+        </a>
+      </div>
+      <nav class="footer-col" aria-label="Footer">
+        <span class="label">{{ site.footer.pages_heading }}</span>
+        {%- for item in navItems %}
+        <a href="{{ item.url }}">{{ site.nav[item.key] }}</a>
+        {%- endfor %}
+      </nav>
+      <div class="footer-col">
+        <span class="label">{{ site.footer.contact_heading }}</span>
+        {% if site.contact.email %}<a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>{% endif %}
+        {% if site.contact.phone %}<a href="tel:{{ site.contact.phone | replace(' ', '') }}">{{ site.contact.phone }}</a>{% endif %}
+        {% if site.contact.address %}<span>{{ site.contact.address }}</span>{% endif %}
+      </div>
+      <div class="footer-col">
+        <span class="label">{{ site.footer.follow_heading }}</span>
+        {%- for s in site.social %}
+        <a href="{{ s.url }}" target="_blank" rel="noopener">{{ s.label }}</a>
+        {%- endfor %}
+      </div>
+    </div>
+    <div class="footer-base">© {{ "" | year }} {{ site.footer.copyright }}</div>
+  </div>
+</footer>
+
+</div>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

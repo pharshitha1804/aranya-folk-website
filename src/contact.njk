@@ -1,0 +1,68 @@
+---
+layout: base.njk
+permalink: /contact/
+eleventyComputed:
+  title: "{{ contact.title }}"
+---
+{%- set f = contact.form -%}
+<section class="wrap contact">
+  <div class="contact__info">
+    <div class="stack-sm" style="gap:16px">
+      <div class="eyebrow">{{ contact.eyebrow }}</div>
+      <h1 class="page-title">{{ contact.heading }}</h1>
+      <p class="lead">{{ contact.intro }}</p>
+    </div>
+    <dl class="details">
+      {% if site.contact.email %}<div><dt class="label">{{ f.email_label }}</dt><dd><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></dd></div>{% endif %}
+      {% if site.contact.phone %}<div><dt class="label">{{ f.phone_label }}</dt><dd><a href="tel:{{ site.contact.phone | replace(' ', '') }}">{{ site.contact.phone }}</a></dd></div>{% endif %}
+      {% if site.contact.address %}<div><dt class="label">{{ f.address_label }}</dt><dd>{{ site.contact.address }}</dd></div>{% endif %}
+      {% if site.contact.hours %}<div><dt class="label">{{ f.hours_label }}</dt><dd>{{ site.contact.hours }}</dd></div>{% endif %}
+    </dl>
+    {% if contact.map_embed_url %}
+    <iframe class="map" src="{{ contact.map_embed_url }}" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    {% else %}
+    <div class="map map--placeholder">map</div>
+    {% endif %}
+  </div>
+
+  {#- Netlify Forms: submissions appear in the Netlify dashboard under Forms → "contact". -#}
+  <form class="form" id="enquire" name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="bot-field" data-enquiry-form>
+    <input type="hidden" name="form-name" value="contact">
+    <p class="honeypot"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+    <fieldset>
+      <legend class="label">{{ f.enquiry_label }}</legend>
+      <div class="toggle">
+        <input type="radio" id="enq-home" name="enquiry_type" value="Home" checked>
+        <label for="enq-home">{{ f.home_label }}</label>
+        <input type="radio" id="enq-business" name="enquiry_type" value="Business">
+        <label for="enq-business">{{ f.business_label }}</label>
+      </div>
+    </fieldset>
+    <div class="form__row">
+      <label class="field">{{ f.name_label }}<input name="name" autocomplete="name" required></label>
+      <label class="field">{{ f.phone_label }}<input name="phone" type="tel" autocomplete="tel"></label>
+    </div>
+    <label class="field">{{ f.email_label }}<input name="email" type="email" autocomplete="email" required></label>
+    <label class="field"><span data-location-label data-home="{{ f.location_label_home }}" data-business="{{ f.location_label_business }}">{{ f.location_label_home }}</span><input name="location"></label>
+    <label class="field">{{ f.message_label }}<textarea name="message" rows="4" data-prefill="{{ f.product_prefill }}"></textarea></label>
+    <button type="submit" class="btn btn--clay">{{ f.submit_label }}</button>
+  </form>
+</section>
+
+<section class="band--stone" id="book" style="scroll-margin-top:120px">
+  <div class="wrap booking">
+    <div class="booking__head">
+      <div class="eyebrow">{{ contact.booking.eyebrow }}</div>
+      <h2 class="section-title">{{ contact.booking.heading }}</h2>
+      <p class="lead">{{ contact.booking.text }}</p>
+    </div>
+    {%- set cal = contact.booking.calendly_url %}
+    {% if cal %}
+    <div class="calendly-inline-widget" data-url="{{ cal }}{% if '?' in cal %}&{% else %}?{% endif %}hide_gdpr_banner=1&background_color=fbf8f1&text_color=30352f&primary_color=59634a"></div>
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    {% else %}
+    <div class="calendly-placeholder">Booking calendar goes here.<br>Add your Calendly link in the CMS: Pages → Contact us → Booking.</div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,11 @@
+---
+layout: base.njk
+permalink: /thanks/
+eleventyComputed:
+  title: "{{ contact.thanks.title }}"
+---
+<section class="wrap thanks">
+  <h1 class="page-title">{{ contact.thanks.heading }}</h1>
+  <p class="lead">{{ contact.thanks.text }}</p>
+  <a class="btn btn--solid" href="/">{{ contact.thanks.button }}</a>
+</section>

@@ -1,0 +1,37 @@
+{
+  "name": "The Aranya Club",
+  "tagline": "Plants / People / A Greener Tomorrow",
+  "description": "Indoor and outdoor gardens for homes, and large-scale landscapes for corporate campuses. Designed, planted and cared for by one team.",
+  "logo": "/assets/images/logo.png",
+  "logo_light": "/assets/images/logo-light.png",
+  "currency": "₹",
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "services": "Services",
+    "about": "About us",
+    "contact": "Contact us"
+  },
+  "header_button": "Book a visit",
+  "contact": {
+    "email": "hello@aranyaclub.com",
+    "phone": "+00 00000 00000",
+    "address": "Studio address, City",
+    "hours": "Mon – Sat, 9am – 6pm"
+  },
+  "social": [
+    { "label": "Instagram", "url": "https://instagram.com/" },
+    { "label": "LinkedIn", "url": "https://linkedin.com/" },
+    { "label": "Pinterest", "url": "https://pinterest.com/" }
+  ],
+  "cta": {
+    "title": "Ready for a greener space?",
+    "button": "Book a consultation"
+  },
+  "footer": {
+    "pages_heading": "Pages",
+    "contact_heading": "Contact",
+    "follow_heading": "Follow",
+    "copyright": "The Aranya Club"
+  }
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Content Manager | The Aranya Club</title>
+</head>
+<body>
+  <!-- Decap CMS: edit site content at /admin/. Configuration lives in config.yml next to this file. -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    // Keep photos a sensible size in the editor's preview pane.
+    CMS.registerPreviewStyle("img { max-width: 320px; height: auto; } body { font-family: system-ui, sans-serif; }", { raw: true });
+  </script>
+</body>
+</html>

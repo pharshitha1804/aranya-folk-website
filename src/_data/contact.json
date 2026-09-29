@@ -1,0 +1,34 @@
+{
+  "title": "Contact us",
+  "eyebrow": "Contact us",
+  "heading": "Let's grow something.",
+  "intro": "Tell us about your space and we'll arrange a site visit.",
+  "map_embed_url": "",
+  "form": {
+    "enquiry_label": "I'm enquiring for",
+    "home_label": "Home",
+    "business_label": "Business",
+    "name_label": "Name",
+    "phone_label": "Phone",
+    "email_label": "Email",
+    "address_label": "Studio",
+    "hours_label": "Hours",
+    "location_label_home": "Area / City",
+    "location_label_business": "Company & site location",
+    "message_label": "Tell us about the space",
+    "product_prefill": "I'm interested in:",
+    "submit_label": "Send enquiry"
+  },
+  "booking": {
+    "eyebrow": "Book a visit",
+    "heading": "Pick a time that suits you.",
+    "text": "Choose a slot for a site visit or a video consultation. We'll confirm by email.",
+    "calendly_url": ""
+  },
+  "thanks": {
+    "title": "Thank you",
+    "heading": "Thanks — we've got your message.",
+    "text": "We'll be in touch within two working days to arrange a site visit.",
+    "button": "Back to home"
+  }
+}

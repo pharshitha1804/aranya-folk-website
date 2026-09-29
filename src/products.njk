@@ -1,0 +1,78 @@
+---
+layout: base.njk
+permalink: /products/
+eleventyComputed:
+  title: "{{ shop.title }}"
+---
+{%- set items = collections.products -%}
+{%- set lights = items | distinct("light") -%}
+{%- set placements = items | distinct("placement") -%}
+<section class="wrap intro">
+  <div class="eyebrow">{{ shop.eyebrow }}</div>
+  <h1 class="page-title">{{ shop.title }}</h1>
+  <p class="lead">{{ shop.intro }}</p>
+</section>
+
+<section class="wrap shop" data-shop>
+  <aside class="filters" aria-label="Filters">
+    <fieldset class="filter-group">
+      <legend class="label">{{ shop.category_heading }}</legend>
+      <button type="button" class="filter-cat" data-filter-cat="" aria-pressed="true">{{ shop.all_label }}</button>
+      {%- for c in items | distinct("category") %}
+      <button type="button" class="filter-cat" data-filter-cat="{{ c }}" aria-pressed="false">{{ c }}</button>
+      {%- endfor %}
+    </fieldset>
+    {%- if lights.length %}
+    <fieldset class="filter-group">
+      <legend class="label">{{ shop.light_heading }}</legend>
+      <div class="chips">
+        {%- for v in ["Low", "Medium", "Bright"] %}{% if v in lights %}
+        <button type="button" class="chip" data-filter-light="{{ v }}" aria-pressed="false">{{ v }}</button>
+        {%- endif %}{% endfor %}
+      </div>
+    </fieldset>
+    {%- endif %}
+    {%- if placements.length %}
+    <fieldset class="filter-group">
+      <legend class="label">{{ shop.placement_heading }}</legend>
+      <div class="chips">
+        {%- for v in ["Indoor", "Outdoor"] %}{% if v in placements %}
+        <button type="button" class="chip" data-filter-placement="{{ v }}" aria-pressed="false">{{ v }}</button>
+        {%- endif %}{% endfor %}
+      </div>
+    </fieldset>
+    {%- endif %}
+  </aside>
+
+  <div class="shop__results">
+    <div class="shop__bar">
+      <span class="shop__count" aria-live="polite"><span data-count>{{ items.length }}</span> {{ shop.count_label }}</span>
+      <label class="shop__sort">{{ shop.sort_label }}:
+        <select data-sort>
+          <option value="featured">{{ shop.sort_featured }}</option>
+          <option value="price-asc">{{ shop.sort_price_asc }}</option>
+          <option value="price-desc">{{ shop.sort_price_desc }}</option>
+        </select>
+      </label>
+    </div>
+    <div class="product-grid" data-grid>
+      {%- for p in items %}
+      <article class="product"
+        data-category="{{ p.data.category }}" data-light="{{ p.data.light }}" data-placement="{{ p.data.placement }}"
+        data-price="{{ p.data.price }}" data-order="{{ loop.index0 }}">
+        <div class="product__media">
+          <img src="{{ p.data.image }}" alt="{{ p.data.name }}" loading="lazy">
+          <span class="product__tag">{{ p.data.category }}</span>
+        </div>
+        <div class="product__row">
+          <span class="product__name">{{ p.data.name }}</span>
+          <span class="price">{{ p.data.price | price(site.currency) }}</span>
+        </div>
+        {% if p.data.note %}<span class="product__note">{{ p.data.note }}</span>{% endif %}
+        <a class="btn btn--outline btn--xs" href="/contact/?item={{ p.data.name | urlencode }}#enquire">{{ shop.button_label }}</a>
+      </article>
+      {%- endfor %}
+    </div>
+    <p class="shop__empty" data-empty hidden>{{ shop.empty_text }}</p>
+  </div>
+</section>

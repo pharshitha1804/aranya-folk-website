@@ -1,0 +1,38 @@
+---
+layout: base.njk
+permalink: /about/
+eleventyComputed:
+  title: "{{ about.title }}"
+---
+<section class="wrap about-hero">
+  <div class="about-hero__copy">
+    <div class="eyebrow">{{ about.eyebrow }}</div>
+    <h1 class="page-title">{{ about.heading }}</h1>
+    <div class="prose">{{ about.story | md | safe }}</div>
+  </div>
+  <div class="about-hero__media"><img src="{{ about.image }}" alt="{{ about.image_alt }}"></div>
+</section>
+
+<section class="band--moss">
+  <div class="wrap values">
+    {%- for v in about.values %}
+    <div class="value">
+      <span class="value__title">{{ v.title }}</span>
+      <span class="value__text">{{ v.text }}</span>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap section section--tight">
+  <h2 class="section-title">{{ about.team_heading }}</h2>
+  <div class="team">
+    {%- for m in about.team %}
+    <div class="member">
+      <img src="{{ m.photo }}" alt="{{ m.name }}" loading="lazy">
+      <span class="member__name">{{ m.name }}</span>
+      <span class="member__role">{{ m.role }}</span>
+    </div>
+    {%- endfor %}
+  </div>
+</section>

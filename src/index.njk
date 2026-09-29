@@ -1,0 +1,119 @@
+---
+layout: base.njk
+eleventyComputed:
+  title: "{{ home.title }}"
+---
+{%- set hero = home.hero -%}
+{% if hero.layout == "Full-bleed" %}
+<section class="hero-full" style="background-image: linear-gradient(rgba(48,53,47,.15), rgba(48,53,47,.7)), url('{{ hero.image }}')">
+  <div class="wrap hero-full__inner">
+    <h1 class="display">{{ hero.title }}</h1>
+    <div class="btn-row">
+      <a class="btn btn--light" href="/services/">{{ hero.primary_button }}</a>
+      <a class="btn btn--outline-light" href="/products/">{{ hero.secondary_button }}</a>
+    </div>
+  </div>
+</section>
+{% else %}
+<section class="wrap hero-split">
+  <div class="hero-split__copy">
+    <h1 class="display">{{ hero.title }}</h1>
+    <p class="lead">{{ hero.text }}</p>
+    <div class="btn-row">
+      <a class="btn btn--solid" href="/services/">{{ hero.primary_button }}</a>
+      <a class="btn btn--outline" href="/products/">{{ hero.secondary_button }}</a>
+    </div>
+  </div>
+  <div class="hero-split__media">
+    <img src="{{ hero.image }}" alt="{{ hero.image_alt }}">
+    <div class="hero-split__side">
+      <img src="{{ hero.small_image }}" alt="{{ hero.small_image_alt }}">
+      <div class="badge">
+        <span class="badge__title">{{ hero.badge_title }}</span>
+        <span class="badge__text">{{ hero.badge_text }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="band--ink">
+  <div class="wrap section">
+    <div class="section-head">
+      <h2 class="section-title" style="max-width:620px">{{ home.offerings.title }}</h2>
+      <a class="text-link" href="/services/">{{ home.offerings.link_label }}</a>
+    </div>
+    <div class="offerings">
+      {%- for o in home.offerings.items %}
+      <div class="offering">
+        <img src="{{ o.image }}" alt="{{ o.image_alt }}" loading="lazy">
+        <div class="offering__label">{{ o.label }}</div>
+        <h3>{{ o.title }}</h3>
+        <p>{{ o.text }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head section-head--center">
+    <div class="eyebrow">{{ home.process.eyebrow }}</div>
+    <h2 class="section-title">{{ home.process.title }}</h2>
+  </div>
+  <div class="steps">
+    {%- for s in process.steps %}
+    <div class="step">
+      <span class="step__n">{{ loop.index | pad }}</span>
+      <span class="step__title">{{ s.title }}</span>
+      <span class="step__text">{{ s.text }}</span>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="band--stone">
+  <div class="wrap section section--tight">
+    <div class="section-head">
+      <h2 class="section-title">{{ home.projects.title }}</h2>
+      {% if home.projects.link_url %}<a class="text-link" href="{{ home.projects.link_url }}">{{ home.projects.link_label }}</a>{% endif %}
+    </div>
+    <div class="projects">
+      {%- for p in home.projects.items %}
+      <div class="project">
+        <img src="{{ p.image }}" alt="{{ p.name }}" loading="lazy">
+        <div class="project__meta">
+          <span class="project__name">{{ p.name }}</span>
+          <span class="project__type">{{ p.type }}</span>
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap section section--tight">
+  <div class="section-head">
+    <div class="stack-sm">
+      <div class="eyebrow">{{ home.shop.eyebrow }}</div>
+      <h2 class="section-title">{{ home.shop.title }}</h2>
+    </div>
+    <a class="text-link" href="/products/">{{ home.shop.link_label }}</a>
+  </div>
+  <div class="featured">
+    {%- for p in collections.products %}{% if p.data.featured %}
+    <a class="featured-item" href="/products/">
+      <img src="{{ p.data.image }}" alt="{{ p.data.name }}" loading="lazy">
+      <span class="featured-item__name">{{ p.data.name }}</span>
+      <span class="price">{{ p.data.price | price(site.currency) }}</span>
+    </a>
+    {%- endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="band--moss">
+  <figure class="testimonial" style="margin:0 auto">
+    <blockquote>“{{ home.testimonial.quote }}”</blockquote>
+    <cite>{{ home.testimonial.author }}</cite>
+  </figure>
+</section>

@@ -1,0 +1,30 @@
+{
+  "title": "Services",
+  "eyebrow": "Services",
+  "heading": "Design, build and care.",
+  "intro": "We handle every stage, from site visit and design to planting and long-term maintenance, for homes and corporate sites.",
+  "button_label": "Enquire",
+  "items": [
+    {
+      "title": "Residential gardens",
+      "text": "Indoor and outdoor gardens designed around your home and routine.",
+      "image": "/assets/images/jade-orange.jpg",
+      "image_alt": "Placeholder residential garden photo",
+      "points": ["Indoor plant styling", "Balcony & terrace gardens", "Backyards & courtyards", "Vertical gardens"]
+    },
+    {
+      "title": "Corporate landscapes",
+      "text": "Landscape design and execution for offices, campuses and commercial sites.",
+      "image": "/assets/images/caladium.jpg",
+      "image_alt": "Placeholder corporate landscape photo",
+      "points": ["Campus master planning", "Office & lobby greenery", "Green roofs", "Irrigation systems"]
+    },
+    {
+      "title": "Maintenance",
+      "text": "Scheduled care plans for homes and businesses.",
+      "image": "/assets/images/tools.jpg",
+      "image_alt": "Placeholder garden tools photo",
+      "points": ["Weekly or monthly visits", "Pruning & feeding", "Pest management", "Seasonal replanting"]
+    }
+  ]
+}

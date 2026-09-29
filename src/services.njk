@@ -1,0 +1,44 @@
+---
+layout: base.njk
+permalink: /services/
+eleventyComputed:
+  title: "{{ services.title }}"
+---
+<section class="wrap intro-split">
+  <div class="stack-sm" style="gap:16px">
+    <div class="eyebrow">{{ services.eyebrow }}</div>
+    <h1 class="page-title">{{ services.heading }}</h1>
+  </div>
+  <p class="lead">{{ services.intro }}</p>
+</section>
+
+<section class="wrap services">
+  {%- for s in services.items %}
+  <div class="service{% if loop.index0 % 2 == 1 %} service--flip{% endif %}">
+    <img src="{{ s.image }}" alt="{{ s.image_alt }}" loading="lazy">
+    <div class="service__body">
+      <span class="service__n">{{ loop.index | pad }}</span>
+      <h2>{{ s.title }}</h2>
+      <p>{{ s.text }}</p>
+      <ul class="points">
+        {%- for point in s.points %}
+        <li>{{ point }}</li>
+        {%- endfor %}
+      </ul>
+      <a class="btn btn--solid btn--sm" href="/contact/#enquire">{{ services.button_label }}</a>
+    </div>
+  </div>
+  {%- endfor %}
+</section>
+
+<section class="band--sage">
+  <div class="wrap steps--band">
+    {%- for s in process.steps %}
+    <div class="step">
+      <span class="step__n">{{ loop.index | pad }}</span>
+      <span class="step__title">{{ s.title }}</span>
+      <span class="step__text">{{ s.text }}</span>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
