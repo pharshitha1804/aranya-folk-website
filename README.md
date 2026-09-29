@@ -43,6 +43,8 @@ Every save in the CMS makes a commit to GitHub. Netlify then rebuilds the site, 
 
 The form on `/contact/` uses [Netlify Forms](https://docs.netlify.com/forms/setup/). Submissions appear in the Netlify dashboard under **Forms → contact**. To get an email for each submission, set up notifications there. The form includes a hidden honeypot field to catch spam bots. After sending, visitors land on `/thanks/`.
 
+**If the form isn't listed in Netlify or submitting gives a 404:** Netlify only looks for forms while it deploys. Check that form detection is on (Site configuration → Forms), then run a new deploy (Deploys → Trigger deploy → Deploy site). The deploy log should report the `contact` form, and it will then appear under Forms.
+
 The "Enquire" button on each product opens the contact form with the product name already in the message.
 
 ## Going live on Netlify (one-time setup)
