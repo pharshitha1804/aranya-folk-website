@@ -32,7 +32,9 @@
       <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ site.nav[item.key] }}</a>
       {%- endfor %}
     </nav>
+    {%- if contact.booking.calendly_url %}
     <a class="btn btn--solid" href="/contact/#book">{{ site.header_button }}</a>
+    {%- endif %}
   </div>
 </header>
 
@@ -43,7 +45,11 @@
 <section class="band--clay">
   <div class="wrap cta">
     <h2>{{ site.cta.title }}</h2>
+    {%- if contact.booking.calendly_url %}
     <a class="btn btn--light" href="/contact/#book">{{ site.cta.button }}</a>
+    {%- else %}
+    <a class="btn btn--light" href="/contact/#enquire">Get in touch</a>
+    {%- endif %}
   </div>
 </section>
 
