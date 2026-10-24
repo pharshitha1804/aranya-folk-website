@@ -18,11 +18,6 @@ eleventyComputed:
       {% if site.contact.address %}<div><dt class="label">{{ f.address_label }}</dt><dd>{{ site.contact.address }}</dd></div>{% endif %}
       {% if site.contact.hours %}<div><dt class="label">{{ f.hours_label }}</dt><dd>{{ site.contact.hours }}</dd></div>{% endif %}
     </dl>
-    {% if contact.map_embed_url %}
-    <iframe class="map" src="{{ contact.map_embed_url }}" title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-    {% else %}
-    <div class="map map--placeholder">map</div>
-    {% endif %}
   </div>
 
   {# Netlify Forms: detected at deploy time via name + data-netlify. The hidden form-name
