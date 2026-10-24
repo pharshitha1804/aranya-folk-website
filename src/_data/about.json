@@ -2,19 +2,23 @@
   "title": "About us",
   "eyebrow": "About us",
   "heading": "Aranya means forest. We bring a little of it to every space.",
-  "story": "Our story paragraph goes here: when the club started, who founded it and why, and how the work has grown from homes to corporate landscapes.",
+  "story": "The Aranya Club is a plant and garden studio in Visakhapatnam. We started with a love of growing things at home, from leafy indoor plants to fruit on our own terrace, and we want to make that joy easy for everyone.\n\nWe work online: you tell us about your space, we help you choose plants that will actually thrive there, and we stay on hand with simple, honest care advice.",
   "image": "/assets/images/logo-full.png",
   "image_alt": "The Aranya Club logo",
   "values": [
-    { "title": "Plants", "text": "Values copy: choosing species that suit the climate and the space." },
-    { "title": "People", "text": "Values copy: gardens built around the people who use them." },
-    { "title": "A greener tomorrow", "text": "Values copy: water-wise, sustainable practice." }
+    {
+      "title": "Plants",
+      "text": "Healthy plants chosen to suit your light, your space and our climate."
+    },
+    {
+      "title": "People",
+      "text": "Clear, friendly advice, so anyone can grow a garden, whether it's their first plant or their fiftieth."
+    },
+    {
+      "title": "A greener tomorrow",
+      "text": "Mindful choices: the right plant in the right place, and care habits that waste less water."
+    }
   ],
-  "team_heading": "The team",
-  "team": [
-    { "name": "Team member", "role": "Founder", "photo": "/assets/images/aglaonema.jpg" },
-    { "name": "Team member", "role": "Lead landscape designer", "photo": "/assets/images/jade.jpg" },
-    { "name": "Team member", "role": "Horticulturist", "photo": "/assets/images/salt.jpg" },
-    { "name": "Team member", "role": "Projects manager", "photo": "/assets/images/tools.jpg" }
-  ]
+  "team_heading": "",
+  "team": []
 }

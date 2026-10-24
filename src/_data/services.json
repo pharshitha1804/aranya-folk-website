@@ -1,30 +1,45 @@
 {
   "title": "Services",
   "eyebrow": "Services",
-  "heading": "Design, build and care.",
-  "intro": "We handle every stage, from site visit and design to planting and long-term maintenance, for homes and corporate sites.",
+  "heading": "Plants, advice and care.",
+  "intro": "Whether you want one plant for a shelf or a plan for a whole balcony, we help you choose well, set things up and keep them growing. Everything starts with an online conversation.",
   "button_label": "Enquire",
   "items": [
     {
-      "title": "Residential gardens",
-      "text": "Indoor and outdoor gardens designed around your home and routine.",
-      "image": "/assets/images/jade-orange.jpg",
-      "image_alt": "Placeholder residential garden photo",
-      "points": ["Indoor plant styling", "Balcony & terrace gardens", "Backyards & courtyards", "Vertical gardens"]
+      "title": "Indoor plants",
+      "text": "Healthy, easy-care plants for living rooms, bedrooms and workspaces, with clear care guidance.",
+      "image": "/assets/images/plant-monstera.jpg",
+      "image_alt": "Monstera plant",
+      "points": [
+        "Plants matched to your light",
+        "Light and watering notes for every plant",
+        "Help choosing pots and placement",
+        "Gifting and bulk orders on request"
+      ]
     },
     {
-      "title": "Corporate landscapes",
-      "text": "Landscape design and execution for offices, campuses and commercial sites.",
-      "image": "/assets/images/caladium.jpg",
-      "image_alt": "Placeholder corporate landscape photo",
-      "points": ["Campus master planning", "Office & lobby greenery", "Green roofs", "Irrigation systems"]
+      "title": "Online garden consultation",
+      "text": "Talk through your space over a video call or messages and get a practical plan you can follow.",
+      "image": "/assets/images/plant-areca-palm.jpg",
+      "image_alt": "Areca palm",
+      "points": [
+        "Balconies, terraces and indoor corners",
+        "Plant suggestions for your conditions",
+        "Simple layout and styling ideas",
+        "Written plan after the call"
+      ]
     },
     {
-      "title": "Maintenance",
-      "text": "Scheduled care plans for homes and businesses.",
-      "image": "/assets/images/tools.jpg",
-      "image_alt": "Placeholder garden tools photo",
-      "points": ["Weekly or monthly visits", "Pruning & feeding", "Pest management", "Seasonal replanting"]
+      "title": "Garden setup & care",
+      "text": "Help setting up your plants and keeping them healthy through the seasons, for homes in Visakhapatnam.",
+      "image": "/assets/images/plant-jade-plant.jpg",
+      "image_alt": "Jade plant",
+      "points": [
+        "Planting and potting support",
+        "Watering and feeding schedules",
+        "Pest and plant-health advice",
+        "Seasonal refresh ideas"
+      ]
     }
   ]
 }

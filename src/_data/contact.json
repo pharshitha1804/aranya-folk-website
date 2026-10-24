@@ -2,7 +2,7 @@
   "title": "Contact us",
   "eyebrow": "Contact us",
   "heading": "Let's grow something.",
-  "intro": "Tell us about your space and we'll arrange a site visit.",
+  "intro": "Tell us about your space and what you'd like to grow. We'll reply within a couple of working days.",
   "form": {
     "name_label": "Name",
     "phone_label": "Phone",
@@ -10,13 +10,13 @@
     "address_label": "City",
     "submit_label": "Send enquiry",
     "email_label": "Email",
-    "location_label_home": "Area / City",
+    "location_label_home": "City / Area",
     "home_label": "Home",
     "business_label": "Business",
-    "location_label_business": "Company & site location",
+    "location_label_business": "Company & city",
     "product_prefill": "I'm interested in:",
     "enquiry_label": "I'm enquiring for",
-    "message_label": "Tell us about the space"
+    "message_label": "Tell us about your space or the plants you're interested in"
   },
   "booking": {
     "eyebrow": "Book a visit",
@@ -27,7 +27,7 @@
   "thanks": {
     "title": "Thank you",
     "heading": "Thanks — we've got your message.",
-    "text": "We'll be in touch within two working days to arrange a site visit.",
+    "text": "We'll get back to you within two working days.",
     "button": "Back to home"
   }
 }

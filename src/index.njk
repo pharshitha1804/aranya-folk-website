@@ -72,6 +72,7 @@ eleventyComputed:
   </div>
 </section>
 
+{%- if home.projects.items.length %}
 <section class="band--stone">
   <div class="wrap section section--tight">
     <div class="section-head">
@@ -91,6 +92,7 @@ eleventyComputed:
     </div>
   </div>
 </section>
+{%- endif %}
 
 <section class="wrap section section--tight">
   <div class="section-head">
@@ -111,9 +113,11 @@ eleventyComputed:
   </div>
 </section>
 
+{%- if home.testimonial.quote %}
 <section class="band--moss">
   <figure class="testimonial" style="margin:0 auto">
     <blockquote>“{{ home.testimonial.quote }}”</blockquote>
     <cite>{{ home.testimonial.author }}</cite>
   </figure>
 </section>
+{%- endif %}

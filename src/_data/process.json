@@ -1,8 +1,20 @@
 {
   "steps": [
-    { "title": "Site visit", "text": "We study light, soil, water and how the space is used." },
-    { "title": "Design", "text": "A planting plan and layout with drawings and a clear quote." },
-    { "title": "Build & plant", "text": "Our crew handles hardscape, irrigation and planting." },
-    { "title": "Care", "text": "Scheduled maintenance keeps the garden healthy year-round." }
+    {
+      "title": "Tell us about your space",
+      "text": "Share a few photos, how much light you get and how much time you have for plants."
+    },
+    {
+      "title": "Get a plan",
+      "text": "A short video call or message with plant suggestions and a simple layout idea."
+    },
+    {
+      "title": "Choose your plants",
+      "text": "Order healthy plants from the shop, or ask us to source what your plan needs."
+    },
+    {
+      "title": "Keep them thriving",
+      "text": "Care notes and support so your plants keep growing well after they arrive."
+    }
   ]
 }

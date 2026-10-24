@@ -2,58 +2,54 @@
   "title": "Home",
   "hero": {
     "layout": "Split",
-    "title": "Gardens made for the way you live.",
-    "text": "Indoor and outdoor gardens for homes, and large-scale landscapes for corporate campuses. Designed, planted and cared for by one team.",
+    "title": "Plants and gardens that suit the way you live.",
+    "text": "Healthy indoor plants and friendly garden design advice, online, from Visakhapatnam. Tell us about your space and we'll help you choose what will thrive in it.",
     "primary_button": "Explore services",
     "secondary_button": "Shop plants",
     "image": "/assets/images/caladium.jpg",
-    "image_alt": "Placeholder garden photo",
+    "image_alt": "Caladium plant with colourful leaves",
     "small_image": "/assets/images/aglaonema.jpg",
-    "small_image_alt": "Placeholder plant photo",
-    "badge_title": "In & out",
-    "badge_text": "Balconies, courtyards, living rooms, rooftops."
+    "small_image_alt": "Aglaonema plant",
+    "badge_title": "Plants / People",
+    "badge_text": "Plants picked for your light, your space and your routine."
   },
   "offerings": {
-    "title": "Two kinds of green space. One team.",
+    "title": "Green things for your home.",
     "link_label": "All services →",
     "items": [
       {
-        "label": "For homes",
-        "title": "Residential gardens",
-        "text": "Indoor planting, balconies, terraces, courtyards and backyards.",
-        "image": "/assets/images/jade-orange.jpg",
-        "image_alt": "Placeholder residential garden photo"
+        "label": "The shop",
+        "title": "Indoor plants",
+        "text": "Easy, healthy indoor plants, each with clear light and watering notes so you know exactly how to care for it.",
+        "image": "/assets/images/plant-monstera.jpg",
+        "image_alt": "Monstera plant"
       },
       {
-        "label": "For businesses",
-        "title": "Corporate landscapes",
-        "text": "Campuses, offices, lobbies and green roofs, with ongoing maintenance.",
-        "image": "/assets/images/jade.jpg",
-        "image_alt": "Placeholder corporate landscape photo"
+        "label": "Advice",
+        "title": "Garden design & care",
+        "text": "Online consultations and plans for balconies, terraces and indoor corners, plus care support after you plant.",
+        "image": "/assets/images/plant-areca-palm.jpg",
+        "image_alt": "Areca palm"
       }
     ]
   },
   "process": {
-    "eyebrow": "How we work",
-    "title": "From first visit to first bloom"
+    "eyebrow": "How it works",
+    "title": "From first message to first new leaf"
   },
   "projects": {
-    "title": "Selected projects",
-    "link_label": "View portfolio →",
+    "title": "",
+    "link_label": "",
     "link_url": "",
-    "items": [
-      { "name": "Project name", "type": "Residential", "image": "/assets/images/caladium.jpg" },
-      { "name": "Project name", "type": "Corporate", "image": "/assets/images/jade.jpg" },
-      { "name": "Project name", "type": "Indoor", "image": "/assets/images/aglaonema.jpg" }
-    ]
+    "items": []
   },
   "shop": {
     "eyebrow": "The shop",
-    "title": "Plants & planters",
+    "title": "Indoor plants",
     "link_label": "Shop all →"
   },
   "testimonial": {
-    "quote": "Client testimonial goes here, one or two sentences about the result and the experience.",
-    "author": "Client name, Company / City"
+    "quote": "",
+    "author": ""
   }
 }

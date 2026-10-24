@@ -24,6 +24,7 @@ eleventyComputed:
   </div>
 </section>
 
+{%- if about.team.length %}
 <section class="wrap section section--tight">
   <h2 class="section-title">{{ about.team_heading }}</h2>
   <div class="team">
@@ -36,3 +37,4 @@ eleventyComputed:
     {%- endfor %}
   </div>
 </section>
+{%- endif %}

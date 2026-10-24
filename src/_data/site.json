@@ -2,8 +2,7 @@
   "contact": {
     "email": "harshithap1804@gmail.com",
     "phone": "+91 7550206774",
-    "address": "Visakhapatnam",
-    "hours": "Mon – Sat, 9am – 6pm"
+    "address": "Visakhapatnam"
   },
   "logo_light": "/assets/images/logo-light.png",
   "nav": {
@@ -20,14 +19,6 @@
     {
       "label": "Instagram",
       "url": "https://www.instagram.com/thearanyaclub?utm_source=ig_web_button_share_sheet&psln=ZDNlZDc0MzIxNw=="
-    },
-    {
-      "label": "LinkedIn",
-      "url": "https://linkedin.com/"
-    },
-    {
-      "label": "Pinterest",
-      "url": "https://pinterest.com/"
     }
   ],
   "tagline": "Plants / People / A Greener Tomorrow",
@@ -42,5 +33,5 @@
     "follow_heading": "Follow",
     "copyright": "The Aranya Club"
   },
-  "description": "Indoor and outdoor gardens for homes, and large-scale landscapes for corporate campuses. Designed, planted and cared for by one team."
+  "description": "Healthy indoor plants and garden design advice, online, from Visakhapatnam. Simple care guides, plants matched to your light and space."
 }
