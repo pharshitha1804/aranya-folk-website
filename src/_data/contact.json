@@ -4,19 +4,19 @@
   "heading": "Let's grow something.",
   "intro": "Tell us about your space and we'll arrange a site visit.",
   "form": {
-    "enquiry_label": "I'm enquiring for",
-    "home_label": "Home",
-    "business_label": "Business",
     "name_label": "Name",
     "phone_label": "Phone",
-    "email_label": "Email",
-    "address_label": "Studio",
     "hours_label": "Hours",
+    "address_label": "City",
+    "submit_label": "Send enquiry",
+    "email_label": "Email",
     "location_label_home": "Area / City",
+    "home_label": "Home",
+    "business_label": "Business",
     "location_label_business": "Company & site location",
-    "message_label": "Tell us about the space",
     "product_prefill": "I'm interested in:",
-    "submit_label": "Send enquiry"
+    "enquiry_label": "I'm enquiring for",
+    "message_label": "Tell us about the space"
   },
   "booking": {
     "eyebrow": "Book a visit",
