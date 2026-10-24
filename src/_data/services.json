@@ -2,7 +2,7 @@
   "title": "Services",
   "eyebrow": "Services",
   "heading": "Plants, advice and care.",
-  "intro": "Whether you want one plant for a shelf or a plan for a whole balcony, we help you choose well, set things up and keep them growing. Everything starts with an online conversation.",
+  "intro": "Whether you want one plant for a shelf or a plan for a whole balcony, we help you choose well, set things up and keep them growing. We start with an online conversation, then look after the rest.",
   "button_label": "Enquire",
   "items": [
     {
@@ -30,15 +30,27 @@
       ]
     },
     {
-      "title": "Garden setup & care",
-      "text": "Help setting up your plants and keeping them healthy through the seasons, for homes in Visakhapatnam.",
+      "title": "Garden setup",
+      "text": "Planting and styling for balconies, terraces, indoor corners and small home gardens in Visakhapatnam.",
       "image": "/assets/images/plant-jade-plant.jpg",
       "image_alt": "Jade plant",
       "points": [
-        "Planting and potting support",
-        "Watering and feeding schedules",
-        "Pest and plant-health advice",
-        "Seasonal refresh ideas"
+        "Planting and potting",
+        "Pot and planter selection",
+        "Layout and styling",
+        "Starter care guide"
+      ]
+    },
+    {
+      "title": "Garden maintenance",
+      "text": "Regular care that keeps your plants and garden healthy, so you can simply enjoy them.",
+      "image": "/assets/images/tools.jpg",
+      "image_alt": "Gardening tools",
+      "points": [
+        "Weekly or monthly care visits",
+        "Pruning, watering and feeding",
+        "Pest and plant-health checks",
+        "Seasonal replanting and refresh"
       ]
     }
   ]
