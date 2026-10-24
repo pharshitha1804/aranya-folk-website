@@ -69,6 +69,7 @@ eleventyComputed:
           <span class="price">{{ p.data.price | price(site.currency) }}</span>
         </div>
         {% if p.data.note %}<span class="product__note">{{ p.data.note }}</span>{% endif %}
+        {% if p.data.watering %}<span class="product__note"><strong>Water:</strong> {{ p.data.watering }}</span>{% endif %}
         <a class="btn btn--outline btn--xs" href="/contact/?item={{ p.data.name | urlencode }}#enquire">{{ shop.button_label }}</a>
       </article>
       {%- endfor %}

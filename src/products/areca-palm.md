@@ -1,11 +1,12 @@
 ---
 name: "Areca Palm"
-price: 1400
-category: Outdoor
-light: Medium
-placement: Outdoor
-note: "Partial shade"
-image: /assets/images/aglaonema.jpg
-featured: false
-order: 5
+price: 99
+category: Indoor
+light: Bright
+placement: Indoor
+note: "Bright, filtered light"
+watering: "When the top 2-3 cm of soil dries"
+image: /assets/images/plant-areca-palm.jpg
+featured: true
+order: 4
 ---
